@@ -23,3 +23,4 @@
 * 1:00: Start practicing and understanding Nivo / thinking about react client.
 * 3:20: Work on Figma design for what I want it to look like.
 * 4:00: Clean up Capstone project files, creating component map for project.
+* 4:45: Have a good understanding of goals and objectives for next few times I work on it after tinkering with everything.
