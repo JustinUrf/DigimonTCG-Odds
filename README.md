@@ -29,4 +29,4 @@
 * 8-9am: Resolving some bugs, reviewing old projects for guide.
 * 5-6pm: Resolving nivo Dependancy, adding more depandacies for project.
 Example project did not use react 17.0 therfore there are dependancy issues with using NIVO because I'd have to learn a different version of react 17.0 in order to code, causing a lot of issues. Deciding on wether or not to continue using NIVO or use a different library for charts.
-
+* 6-7PM: Reading Plotly documentation and being sad that NIVO doesn't work in 18.0.0
