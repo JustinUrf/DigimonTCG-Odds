@@ -35,3 +35,4 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 ### Saturday, 05/06/23
 
 8-9AM: Cleaning project folder, no longer using react. Just using Webpack to compile website. Reviewing how to set up file strucutre
+9-10AM: Bug fixing webpack configs WIP...
