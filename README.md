@@ -40,3 +40,4 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 ### Sunday, 05/07/23
 
 * 6-6:30PM: Created form, WIP math for rookie calculator, rookie graph... etc"
+* 6:30-7:30: Testing Different Bar graphs settings, reading documentation fixing errors WIP.

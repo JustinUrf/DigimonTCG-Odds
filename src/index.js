@@ -4,15 +4,19 @@ import 'plotly.js-dist-min';
 import 'plotly.js';
 
 let Plotly = require('plotly.js')
+var data = [
+  {
+    x: ['giraffes', 'orangutans', 'monkeys'],
+    y: [20, 14, 23],
+    type: 'bar'
+  }
+];
 
 function handleDeckForm(event) {
   event.preventDefault();
   document.querySelector('#rookieOdds').innerText = "Hi there";
   let TESTER = document.getElementById('tester');
-	Plotly.newPlot( TESTER, [{
-	x: [1, 2, 3, 4, 5],
-	y: [1, 2, 4, 8, 16] }], {
-	margin: { t: 0 } } ); 
+	Plotly.newPlot(TESTER, data);
 }
 
 window.addEventListener("load", function() {
