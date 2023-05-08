@@ -10,6 +10,6 @@
     "node": true
   },
   "rules": {
-    "semi": 1
+    "semi": 0
   }
 }

@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
+    "plotly.js": "^2.22.0",
     "plotly.js-dist-min": "^2.22.0"
   }
 }
