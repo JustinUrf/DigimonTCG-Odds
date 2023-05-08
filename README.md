@@ -41,3 +41,4 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 
 * 6-6:30PM: Created form, WIP math for rookie calculator, rookie graph... etc"
 * 6:30-7:30: Testing Different Bar graphs settings, reading documentation fixing errors WIP.
+* 8-30:9:30 Creating draw algorithims WIP.
