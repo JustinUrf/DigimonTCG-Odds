@@ -2,6 +2,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'plotly.js-dist-min';
 import 'plotly.js';
+import createDeck, { Card } from './createDeck';
 
 let Plotly = require('plotly.js')
 var data = [
@@ -15,8 +16,14 @@ var data = [
 function handleDeckForm(event) {
   event.preventDefault();
   document.querySelector('#rookieOdds').innerText = "Hi there";
-  let TESTER = document.getElementById('tester');
-	Plotly.newPlot(TESTER, data);
+  const lv3 = parseInt(document.querySelector("#lv3").value);
+  const lv4 = parseInt(document.querySelector("#lv4").value);
+  const lv5 = parseInt(document.querySelector("#lv5").value);
+  const lv6 = parseInt(document.querySelector("#lv6").value);
+  const lv7 = parseInt(document.querySelector("#lv7").value);
+  const options = parseInt(document.querySelector("#options").value);
+  const tamers = parseInt(document.querySelector("tamers").value);
+
 }
 
 window.addEventListener("load", function() {
