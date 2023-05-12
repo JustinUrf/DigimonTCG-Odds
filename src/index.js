@@ -16,13 +16,13 @@ let Plotly = require('plotly.js')
 function handleDeckForm(event) {
   event.preventDefault();
   // document.querySelector('#rookieOdds').innerText = "Hi there";
-  const lv3 = parseInt(document.querySelector("#lv3").value);
-  const lv4 = parseInt(document.querySelector("#lv4").value);
-  const lv5 = parseInt(document.querySelector("#lv5").value);
-  const lv6 = parseInt(document.querySelector("#lv6").value);
-  const lv7 = parseInt(document.querySelector("#lv7").value);
-  const options = parseInt(document.querySelector("#options").value);
-  const tamers = parseInt(document.querySelector("#tamers").value);
+  const lv3 = parseInt(document.querySelector("#lv3").value) || 0;
+  const lv4 = parseInt(document.querySelector("#lv4").value) || 0 ;
+  const lv5 = parseInt(document.querySelector("#lv5").value) || 0 ;
+  const lv6 = parseInt(document.querySelector("#lv6").value) || 0 ;
+  const lv7 = parseInt(document.querySelector("#lv7").value) || 0;
+  const options = parseInt(document.querySelector("#options").value) || 0 ;
+  const tamers = parseInt(document.querySelector("#tamers").value) || 0 ;
   const deckBarGraph = [
     {
       x:['lv3', 'lv4','lv5','lv6','lv7', 'options', 'tamers'],
