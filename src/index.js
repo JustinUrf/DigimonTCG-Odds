@@ -22,7 +22,7 @@ function handleDeckForm(event) {
   const lv6 = parseInt(document.querySelector("#lv6").value);
   const lv7 = parseInt(document.querySelector("#lv7").value);
   const options = parseInt(document.querySelector("#options").value);
-  const tamers = parseInt(document.querySelector("tamers").value);
+  const tamers = parseInt(document.querySelector("#tamers").value);
   const deckBarGraph = [
     {
       x:['lv3', 'lv4','lv5','lv6','lv7', 'options', 'tamers'],
@@ -30,7 +30,7 @@ function handleDeckForm(event) {
       type: 'bar'
     }
   ]
-  let deck = document.getElementById('deck');
+  let deck = document.getElementById('tester');
   Plotly.newPlot(deck, deckBarGraph)
 }
 
