@@ -45,3 +45,4 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 
 ### Friday, 05/12/23
 * 9:30-10:30: Create deck maker function. WIP Testing bar graph that shows ratio. 
+* 10:30-11:30: Create function that displays listed numbers in a graph, grabs correct numbers from forum.

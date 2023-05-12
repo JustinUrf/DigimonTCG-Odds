@@ -31,5 +31,20 @@
     "bootstrap": "^5.2.3",
     "plotly.js": "^2.22.0",
     "plotly.js-dist-min": "^2.22.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "parser": "babel-eslint"
+    },
+    "rules": {
+        "no-unused-vars": "off" 
+    }
   }
 }
