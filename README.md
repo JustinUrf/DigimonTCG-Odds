@@ -48,3 +48,4 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 * 10:30-11:30: Create function that displays listed numbers in a graph, grabs correct numbers from forum.
 * 3:00-3:30: Bug fixing, missed variable name 
 * 3-30:4:30: Add logic to cover edge cases,  adding logic to shuffle an array multiple times... WIP
+* 4:30-5:30:
