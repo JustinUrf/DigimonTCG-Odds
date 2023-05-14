@@ -28,11 +28,11 @@ export default function createDeck(lv3, lv4, lv5, lv6, lv7, options, tamers) {
   }
 
   for (let i = 0; i < options; i++) {
-    deck.push(new Card("options"))
+    deck.push(new Card("option"))
   }
 
   for (let i = 0; i < tamers; i++) {
-    deck.push(new Card("tamers"))
+    deck.push(new Card("tamer"))
   }
 
   return deck

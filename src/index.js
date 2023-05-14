@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'plotly.js-dist-min';
 import 'plotly.js';
 import createDeck, { Card } from './createDeck';
+import rookieOdds from './RookieOdds';
+import shuffleArray from './shuffleArray';
 
 let Plotly = require('plotly.js')
 
@@ -23,8 +25,11 @@ function handleDeckForm(event) {
       type: 'bar'
     }
   ]
+  // Creates bar graph based on const in tester div.
   let deck = document.getElementById('tester');
   Plotly.newPlot(deck, deckBarGraph)
+  console.log(rookieOdds(deckObject));
+
 }
 
 window.addEventListener("load", function() {
