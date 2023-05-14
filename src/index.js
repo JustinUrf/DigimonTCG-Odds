@@ -27,8 +27,9 @@ function handleDeckForm(event) {
   ]
   // Creates bar graph based on const in tester div.
   let deck = document.getElementById('tester');
-  Plotly.newPlot(deck, deckBarGraph)
-  console.log(rookieOdds(deckObject)[1].type);
+  Plotly.newPlot(deck, deckBarGraph);
+  console.log(rookieOdds(deckObject));
+
 
 }
 
