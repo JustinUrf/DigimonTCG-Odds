@@ -55,4 +55,4 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 
 ### Sunday, 05/14/23
 * 7:00-8:00: Debugging function for rookie odds + graphing functionality (pie chart)
-* 8:00: bug fixing create Data, bug fixing rookie.
+* 8:00:9:00: bug fixing create Data, bug fixing rookie.
