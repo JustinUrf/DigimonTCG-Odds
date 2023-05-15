@@ -2,7 +2,7 @@
 
 ### An Application to help people make decisions based on statistics in making decks in a card game.
 
-#### By: Justin Lee 
+#### By Justin Lee 
 
 ## Technologies Used
 * React
@@ -17,43 +17,46 @@
 
 ### Research & Planning Log
 ### Friday, 04/28/2023
-* 8:20: Make a personal to do list
-* 9:20: Switch from researching graphing tools to writing project propasal
-* 10:15: Finished project proposal, watching videos on Nivo/Experimenting.
-* 1:00: Start practicing and understanding Nivo / thinking about react client.
-* 3:20: Work on Figma design for what I want it to look like.
-* 4:00: Clean up Capstone project files, creating component map for project.
-* 4:45: Have a good understanding of goals and objectives for next few times I work on it after tinkering with everything.
+* 820 Make a personal to do list
+* 920 Switch from researching graphing tools to writing project propasal
+* 1015 Finished project proposal, watching videos on Nivo/Experimenting.
+* 100 Start practicing and understanding Nivo / thinking about react client.
+* 320 Work on Figma design for what I want it to look like.
+* 400 Clean up Capstone project files, creating component map for project.
+* 445 Have a good understanding of goals and objectives for next few times I work on it after tinkering with everything.
 
 ### Friday, 05/05/23
-* 8-9am: Resolving some bugs, reviewing old projects for guide.
-* 5-6pm: Resolving nivo Dependancy, adding more depandacies for project.
+* 8-9am Resolving some bugs, reviewing old projects for guide.
+* 5-6pm Resolving nivo Dependancy, adding more depandacies for project.
 Example project did not use react 17.0 therfore there are dependancy issues with using NIVO because I'd have to learn a different version of react 17.0 in order to code, causing a lot of issues. Deciding on wether or not to continue using NIVO or use a different library for charts.
-* 6-7PM: Reading Plotly documentation and being sad that NIVO doesn't work in 18.0.0
-* 7-8PM: Testing Plotly in seperate file to see if it works WIP.
+* 6-7PM Reading Plotly documentation and being sad that NIVO doesn't work in 18.0.0
+* 7-8PM Testing Plotly in seperate file to see if it works WIP.
 
 ### Saturday, 05/06/23
 
-* 8-9AM: Cleaning project folder, no longer using react. Just using Webpack to compile website. Reviewing how to set up file strucutre
-* 9-10AM: Bug fixing webpack configs WIP...
+* 8-9AM Cleaning project folder, no longer using react. Just using Webpack to compile website. Reviewing how to set up file strucutre
+* 9-10AM Bug fixing webpack configs WIP...
 
 ### Sunday, 05/07/23
 
-* 6-6:30PM: Created form, WIP math for rookie calculator, rookie graph... etc"
-* 6:30-7:30: Testing Different Bar graphs settings, reading documentation fixing errors WIP.
-* 8-30:9:30 Creating draw algorithims WIP.
+* 1800-1830 Created form, WIP math for rookie calculator, rookie graph... etc"
+* 1830-1930 Testing Different Bar graphs settings, reading documentation fixing errors WIP.
+* 2030-2130 Creating draw algorithims WIP.
 
 ### Friday, 05/12/23
-* 9:30-10:30: Create deck maker function. WIP Testing bar graph that shows ratio. 
-* 10:30-11:30: Create function that displays listed numbers in a graph, grabs correct numbers from forum.
-* 3:00-3:30: Bug fixing, missed variable name 
-* 3-30:4:30: Add logic to cover edge cases,  adding logic to shuffle an array multiple times... WIP
-* 4:30-5:30: Working on logic for rookie Odds...
+* 930-1030 Create deck maker function. WIP Testing bar graph that shows ratio. 
+* 1030-1130 Create function that displays listed numbers in a graph, grabs correct numbers from forum.
+* 1500-1530 Bug fixing, missed variable name 
+* 1530-1630 Add logic to cover edge cases,  adding logic to shuffle an array multiple times... WIP
+* 1630-1730 Working on logic for rookie Odds...
 
 ### Saturday, 05/13/23
-* 10:00-10:30: Working on logic for Rookie odds.
+* 2200-2230 Working on logic for Rookie odds.
 
 ### Sunday, 05/14/23
-* 7:00-8:00: Debugging function for rookie odds + graphing functionality (pie chart)
-* 8:00-9:00: bug fixing create Data, bug fixing rookie.
-* 9:00-10:00: Same bug, issue with dealing with nested forloops and its interaction with the checker.
+* 0700-800 Debugging function for rookie odds + graphing functionality (pie chart)
+* 0800-900 bug fixing create Data, bug fixing rookie.
+* 0900-1000 Same bug, issue with dealing with nested forloops and its interaction with the checker.
+
+### Monday, 05/15/23 
+* 1300-1400 Changed format of README to military time to track time easier. Solved function for Rookie Odds.
