@@ -54,9 +54,10 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 * 2200-2230 Working on logic for Rookie odds.
 
 ### Sunday, 05/14/23
-* 0700-800 Debugging function for rookie odds + graphing functionality (pie chart)
-* 0800-900 bug fixing create Data, bug fixing rookie.
+* 0700-0800 Debugging function for rookie odds + graphing functionality (pie chart)
+* 0800-0900 bug fixing create Data, bug fixing rookie.
 * 0900-1000 Same bug, issue with dealing with nested forloops and its interaction with the checker.
 
 ### Monday, 05/15/23 
 * 1300-1400 Changed format of README to military time to track time easier. Solved function for Rookie Odds.
+* 1400-1500 Create createData.js logic.
