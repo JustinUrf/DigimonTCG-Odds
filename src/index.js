@@ -3,14 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'plotly.js-dist-min';
 import 'plotly.js';
 import createDeck, { Card } from './createDeck';
-import rookieOdds from './RookieOdds';
 import shuffleArray from './shuffleArray';
 import createData from './createData';
+import rookieOddsData from './RookieOdds';
 
 let Plotly = require('plotly.js')
 
 function handleDeckForm(event) {
   event.preventDefault();
+  //Collect user input, if field left empty(falsy) use 0 instead.
   const lv3 = parseInt(document.querySelector("#lv3").value) || 0;
   const lv4 = parseInt(document.querySelector("#lv4").value) || 0 ;
   const lv5 = parseInt(document.querySelector("#lv5").value) || 0 ;
@@ -18,22 +19,19 @@ function handleDeckForm(event) {
   const lv7 = parseInt(document.querySelector("#lv7").value) || 0;
   const options = parseInt(document.querySelector("#options").value) || 0 ;
   const tamers = parseInt(document.querySelector("#tamers").value) || 0 ;
+
+  //Deck object
   const deckObject = createDeck(lv3, lv4, lv5, lv6, lv7, options, tamers)
+
+  //Take user input and graph first graph.
   const deckBarGraphX = ['lv3', 'lv4','lv5','lv6','lv7', 'options', 'tamers']
   const deckBarGraphY =  [lv3, lv4, lv5, lv6, lv7, options, tamers]
   const deckBarGraph = createData(deckBarGraphX, deckBarGraphY, 'bar')
-  // const deckBarGraph = [
-  //   {
-  //     x:['lv3', 'lv4','lv5','lv6','lv7', 'options', 'tamers'],
-  //     y:[lv3, lv4, lv5, lv6, lv7, options, tamers],
-  //     type: 'bar'
-  //   }
-  // ]
-  // Creates bar graphb ased on const in tester div.
   let deck = document.getElementById('tester');
   Plotly.newPlot(deck, deckBarGraph);
-  console.log(rookieOdds(deckObject));
 
+  const rookieOdds = rookieOddsData(deckObject);
+  console.log(rookieOdds)
 
 }
 
