@@ -67,3 +67,4 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 ### Tuesday, 05/16/23
 
 0900-1000 Resolved bug for index.js, imported the wrong JS logic.
+1000-11000 Refactor logic for giving out object, debugging Pie graph.

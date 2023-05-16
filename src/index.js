@@ -9,6 +9,11 @@ import rookieOddsData from './rookieOddsData';
 
 let Plotly = require('plotly.js')
 
+const layout = {
+  height: 400,
+  width: 500
+};
+
 function handleDeckForm(event) {
   event.preventDefault();
   //Collect user input, if field left empty(falsy) use 0 instead.
@@ -31,10 +36,10 @@ function handleDeckForm(event) {
   Plotly.newPlot(displayDeck, deckBarGraph);
 
 
-  const rookieOddsObject = rookieOddsData(deckObject);
-  const rookieDataX = [rookieOddsObject.rookie, rookieOddsObject.rookieWithMulligan, rookieOddsObject.noRookie]
-  const rookieDataY = ["Rookie", "Rookies W/ Mulligan", "No Rookie"]
+  const rookiePieGraph = rookieOddsData(deckObject);
+  console.log(rookiePieGraph);
   let displayRookieOdds = document.getElementById('rookieOdds')
+  Plotly.newPlot(displayRookieOdds, rookiePieGraph, layout)
 
 
 }
