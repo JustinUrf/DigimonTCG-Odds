@@ -70,4 +70,4 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 * 1000-1100 Refactor logic for giving out object containg data (cleaning up Index from business logic as much as I can), debugging Pie graph.
 * 1100-1200 Pie graph implemented, needed to change data type, thinking about other data structures to implement.
 * 1300-1400 Implement another Calculation to check if Rookie and Chmapion is in hand.
-* 1400-1500 
+* 1400-1500 Implement creation of data for rookies and champions
