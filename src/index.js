@@ -38,13 +38,14 @@ function handleDeckForm(event) {
   let displayDeck  = document.getElementById('tester');
   Plotly.newPlot(displayDeck, deckBarGraph);
 
-
+  //Creates Data for 
   const rookiePieGraph = rookieOddsData(deckObject);
   let displayRookieOdds = document.getElementById('rookieOdds')
   Plotly.newPlot(displayRookieOdds, rookiePieGraph, layout)
 
   const rookieAndChampionPieGraph = rookieAndChampionsOddsData(deckObject);
-  console.log(rookieAndChampionPieGraph)
+  let displayRookieAndChampionOdds = document.getElementById('rookieAndChampionOdds')
+  Plotly.newPlot(displayRookieAndChampionOdds, rookieAndChampionPieGraph, layout)
 }
 
 window.addEventListener("load", function() {

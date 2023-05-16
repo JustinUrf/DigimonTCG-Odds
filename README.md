@@ -71,3 +71,5 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 * 1100-1200 Pie graph implemented, needed to change data type, thinking about other data structures to implement.
 * 1300-1400 Implement another Calculation to check if Rookie and Chmapion is in hand.
 * 1400-1500 Implement creation of data for rookies and champions
+* 1500-1600 Implement data in graph, working on Security logic WIP
+

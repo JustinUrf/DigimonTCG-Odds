@@ -19,7 +19,7 @@ export default function rookieAndChampionsOddsData(deck) {
     } else if (result === "topDeckChampion") {
       finalResult.topDeckChampion += 1;
     } else if (result === "topDeckChampionOnMulligan") {
-      finalResult.topDeckChampionMulligan
+      finalResult.topDeckChampionMulligan += 1;
     } else if (result === false) {
       finalResult.didNot += 1;
     }

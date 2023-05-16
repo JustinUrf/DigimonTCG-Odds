@@ -16,7 +16,7 @@ export default function rookieAndChampionsOdds(deck) {
       championInHand = true;
     }
     if(rookieInHand === true && i === 4 && championInHand === false) {
-      if(newDeck[10] === "lv4") {
+      if(newDeck[10].type === "lv4") {
         championInHand = true;
         drewChampion = true;
       }
@@ -43,7 +43,7 @@ export default function rookieAndChampionsOdds(deck) {
       championInHand = true;
     }
     if(rookieInHand === true && i === 4 && championInHand === false) {
-      if(newDeck[10] === "lv4") {
+      if(newDeck[10].type === "lv4") {
         championInHand = true;
         drewChampion = true;
       }
