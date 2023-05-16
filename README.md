@@ -66,6 +66,7 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 
 ### Tuesday, 05/16/23
 
-0900-1000 Resolved bug for index.js, imported the wrong JS logic.
-1000-1100 Refactor logic for giving out object containg data (cleaning up Index from business logic as much as I can), debugging Pie graph.
-1100-1200 Pie graph implemented, needed to change data type, thinking about other data structures to implement.
+* 0900-1000 Resolved bug for index.js, imported the wrong JS logic.
+* 1000-1100 Refactor logic for giving out object containg data (cleaning up Index from business logic as much as I can), debugging Pie graph.
+* 1100-1200 Pie graph implemented, needed to change data type, thinking about other data structures to implement.
+* 1300-1400 Implement another Calculation to check if Rookie and Chmapion is in hand.

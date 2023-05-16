@@ -4,7 +4,7 @@ import 'plotly.js-dist-min';
 import 'plotly.js';
 import createDeck, { Card } from './createDeck';
 import shuffleArray from './shuffleArray';
-import createData from './createData';
+import createData from './createLineGraphData';
 import rookieOddsData from './rookieOddsData';
 import createPieData from './createPieData';
 
