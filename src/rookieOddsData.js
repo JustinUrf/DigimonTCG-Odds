@@ -1,6 +1,6 @@
 import rookieOdds from "./RookieOdds";
 import shuffleArray from "./shuffleArray";
-import createData from "./createData";
+import createPieData from "./createPieData";
 
 // export default function rookieOddsData(deck) {
 
@@ -51,5 +51,5 @@ export default function rookieOddsData(deck) {
   const rookieDataX = [brickResult.rookie, brickResult.rookieWithMulligan, brickResult.noRookie]
   const rookieDataY = ["Rookie", "Rookies W/ Mulligan", "No Rookie"]
 
-  return createData(rookieDataX, rookieDataY, "pie");
+  return createPieData(rookieDataX, rookieDataY, "pie");
 }

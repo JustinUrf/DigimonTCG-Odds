@@ -6,6 +6,7 @@ import createDeck, { Card } from './createDeck';
 import shuffleArray from './shuffleArray';
 import createData from './createData';
 import rookieOddsData from './rookieOddsData';
+import createPieData from './createPieData';
 
 let Plotly = require('plotly.js')
 
