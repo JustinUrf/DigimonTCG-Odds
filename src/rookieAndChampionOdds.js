@@ -1,12 +1,12 @@
 import shuffleArray from "./shuffleArray";
 
-export default function rookieOdds(deck) {
+export default function rookieAndChampionsOdds(deck) {
   let newDeck = deck;
   shuffleArray(newDeck)
   let startingHand = newDeck.slice(0,5);
   let rookieInHand = false;
   let championInHand = false;
-  let mulligan = false
+  let drewChampion = false
 
   for (let i = 0; i < startingHand.length; i++) {
     if(startingHand[i].type === "lv3") {
@@ -15,10 +15,14 @@ export default function rookieOdds(deck) {
     if(startingHand[i].type === "lv4") {
       championInHand = true;
     }
-    if(rookieInHand === true) {
-      if(newDeck[5] === "lv4") {
+    if(rookieInHand === true && i === 4 && championInHand === false) {
+      if(newDeck[10] === "lv4") {
         championInHand = true;
+        drewChampion = true;
       }
+    }
+    if(rookieInHand === true && championInHand === true && drewChampion === true) {
+      return "topDeckChampion"
     }
     if(rookieInHand === true && championInHand === true) {
       return true
@@ -29,6 +33,7 @@ export default function rookieOdds(deck) {
   startingHand = newDeck.slice(0, 5);
   rookieInHand = false;
   championInHand = false;
+  drewChampion = false;
 
   for (let i = 0; i < startingHand.length; i++) {
     if(startingHand[i].type === "lv3") {
@@ -37,13 +42,17 @@ export default function rookieOdds(deck) {
     if(startingHand[i].type === "lv4") {
       championInHand = true;
     }
-    if(rookieInHand === true) {
-      if(newDeck[5] === "lv4") {
+    if(rookieInHand === true && i === 4 && championInHand === false) {
+      if(newDeck[10] === "lv4") {
         championInHand = true;
+        drewChampion = true;
       }
     }
+    if(rookieInHand === true && championInHand === true && drewChampion === true) {
+      return "topDeckChampionOnMulligan"
+    }
     if(rookieInHand === true && championInHand === true) {
-      return "mulliganTrue"
+      return "mulliganedBoth"
     }
   }
 

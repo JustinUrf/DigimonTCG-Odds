@@ -17,12 +17,7 @@ export default function rookieOddsData(deck) {
     } else if (result === false) {
       brickResult.noRookie += 1;
     } else if (result === "mulliganRookie") {
-      let resultAfterMulligan = rookieOdds(deck);
-      if (resultAfterMulligan === true) {
-        brickResult.rookieWithMulligan += 1;
-      } else {
-        brickResult.noRookie += 1;
-      }
+      brickResult.rookieWithMulligan += 1;
     }
   }
   const rookieDataX = [brickResult.rookie, brickResult.rookieWithMulligan, brickResult.noRookie]

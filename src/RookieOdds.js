@@ -22,4 +22,4 @@ export default function rookieOdds(deck) {
   }
 
   return false;
-}
+}  

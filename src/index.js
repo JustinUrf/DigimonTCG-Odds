@@ -7,6 +7,8 @@ import shuffleArray from './shuffleArray';
 import createData from './createLineGraphData';
 import rookieOddsData from './rookieOddsData';
 import createPieData from './createPieData';
+import rookieAndChampionsOddsData from './rookieAndChampionOddsData';
+
 
 let Plotly = require('plotly.js')
 
@@ -38,11 +40,11 @@ function handleDeckForm(event) {
 
 
   const rookiePieGraph = rookieOddsData(deckObject);
-  console.log(rookiePieGraph);
   let displayRookieOdds = document.getElementById('rookieOdds')
   Plotly.newPlot(displayRookieOdds, rookiePieGraph, layout)
 
-
+  const rookieAndChampionPieGraph = rookieAndChampionsOddsData(deckObject);
+  console.log(rookieAndChampionPieGraph)
 }
 
 window.addEventListener("load", function() {
