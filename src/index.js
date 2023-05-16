@@ -5,7 +5,7 @@ import 'plotly.js';
 import createDeck, { Card } from './createDeck';
 import shuffleArray from './shuffleArray';
 import createData from './createData';
-import rookieOddsData from './RookieOdds';
+import rookieOddsData from './rookieOddsData';
 
 let Plotly = require('plotly.js')
 
@@ -27,11 +27,15 @@ function handleDeckForm(event) {
   const deckBarGraphX = ['lv3', 'lv4','lv5','lv6','lv7', 'options', 'tamers']
   const deckBarGraphY =  [lv3, lv4, lv5, lv6, lv7, options, tamers]
   const deckBarGraph = createData(deckBarGraphX, deckBarGraphY, 'bar')
-  let deck = document.getElementById('tester');
-  Plotly.newPlot(deck, deckBarGraph);
+  let displayDeck  = document.getElementById('tester');
+  Plotly.newPlot(displayDeck, deckBarGraph);
 
-  const rookieOdds = rookieOddsData(deckObject);
-  console.log(rookieOdds)
+
+  const rookieOddsObject = rookieOddsData(deckObject);
+  const rookieDataX = [rookieOddsObject.rookie, rookieOddsObject.rookieWithMulligan, rookieOddsObject.noRookie]
+  const rookieDataY = ["Rookie", "Rookies W/ Mulligan", "No Rookie"]
+  let displayRookieOdds = document.getElementById('rookieOdds')
+
 
 }
 

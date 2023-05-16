@@ -1,7 +1,7 @@
 import shuffleArray from "./shuffleArray"
 
 export default function rookieOdds(deck) {
-  let newDeck = [...deck];
+  let newDeck = deck;
   shuffleArray(newDeck);
   let startingHand = newDeck.slice(0, 5);
 
