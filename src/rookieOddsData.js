@@ -1,6 +1,6 @@
 import rookieOdds from "./RookieOdds";
 import shuffleArray from "./shuffleArray";
-import createPieData from "./createPieData";
+import createPieData from "./createPieData"
 
 export default function rookieOddsData(deck) {
   let brickResult = {
