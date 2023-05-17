@@ -73,3 +73,7 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 * 1400-1500 Implement creation of data for rookies and champions
 * 1500-1600 Implement data in graph, working on Security logic WIP
 * 1600-1645 Doucmentation studying to find a graph device that works with what I want to d for tomorrow, thinking about syling and CSS tomorrow, Implementing Netlify hosting tomorrow.
+
+### Wednesday, 05/17/23
+
+* 0800-0900 Reading Netilify Documentation, planning how to style my site.
