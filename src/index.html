@@ -5,34 +5,48 @@
   </head>
 <body>
   <div class="container">
-    <h3>Enter Your Deck.</h3>
-    <form id="deck-checker-form">
-      <label for="lv3">Enter number of level 3's/Rookies</label>
-      <input id="lv3" type="number">
-      <br>
-      <label for="lv4">Enter number of level 4's/Champion </label>
-      <input id="lv4" type="number">
-      <br>
-      <label for="lv5">Enter number of level 5's/Ultimate</label>
-      <input id="lv5" type="number">
-      <br>
-      <label for="lv6">Enter number of level 6's/Ultimates</label>
-      <input id="lv6" type="number">
-      <br>
-      <label for="lv7">Enter number of level 7's/Megas</label>
-      <input id="lv7" type="number">
-      <br>
-      <label for="options">Enter number of Options</label>
-      <input id="options" type="number">
-      <br>
-      <label for="tamers">Enter the number of Tamers</label>
-      <input id="tamers" type="number">
-      <button type="submit">Submit</button>
-    </form>
-    <div id="deck"></div>
-    <div id="rookieOdds"></div>
-    <div id="rookieAndChampionOdds"></div>
-    <div id="tester" style="width:600px;height:400px;"></div>
+    <div class="row">
+      <div class=" container pt-2 mt-5 col-6">
+        <h3>Enter Your Deck.</h3>
+        <form id="deck-checker-form">
+          <label for="lv3">Enter number of level 3's/Rookies</label>
+          <input id="lv3" type="number">
+          <br>
+          <label for="lv4">Enter number of level 4's/Champion </label>
+          <input id="lv4" type="number">
+          <br>
+          <label for="lv5">Enter number of level 5's/Ultimate</label>
+          <input id="lv5" type="number">
+          <br>
+          <label for="lv6">Enter number of level 6's/Ultimates</label>
+          <input id="lv6" type="number">
+          <br>
+          <label for="lv7">Enter number of level 7's/Megas</label>
+          <input id="lv7" type="number">
+          <br>
+          <label for="options">Enter number of Options</label>
+          <input id="options" type="number">
+          <br>
+          <label for="tamers">Enter the number of Tamers</label>
+          <input id="tamers" type="number">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="col-6 container mt-5">
+        <h2>This is a digimon odds simulator that runs through scenarios 1000 times and visualizes what happens. Input your deck. </h2>
+        <div id="deck" style="width: 100%; height:75%;"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <div id="rookieOdds"></div>
+      </div>
+      <div class="col-6">
+        <div id="rookieAndChampionOdds"></div>
+      </div>
+    </div>
+    <div id="tester"></div>
   </div>
 
 <script src="bundle.js"></script></body>

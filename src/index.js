@@ -34,7 +34,7 @@ function handleDeckForm(event) {
   const deckBarGraphX = ['lv3', 'lv4','lv5','lv6','lv7', 'options', 'tamers']
   const deckBarGraphY =  [lv3, lv4, lv5, lv6, lv7, options, tamers]
   const deckBarGraph = createData(deckBarGraphX, deckBarGraphY, 'bar')
-  let displayDeck  = document.getElementById('tester');
+  let displayDeck  = document.getElementById('deck');
   Plotly.newPlot(displayDeck, deckBarGraph);
 
   //Creates Data/graph for rookie Odds
