@@ -80,3 +80,4 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 * 0900-1000 Add logic for gathering Security odd
 * 1000-1100 Add logic to gather data into a giant object
 * 1100-1200 WIP logic for graphing data for Securities odd 
+* 1300-1400 Apply logic for graphing data and security odds

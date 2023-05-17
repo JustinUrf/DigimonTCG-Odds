@@ -48,9 +48,11 @@ function handleDeckForm(event) {
   let displayRookieAndChampionOdds = document.getElementById('rookieAndChampionOdds')
   Plotly.newPlot(displayRookieAndChampionOdds, rookieAndChampionPieGraph, layout)
 
-  //Create data for what everything in your security looks like 
-  const testData = securityData(deckObject)
-  console.log(testData)
+  //Create data for what everything in your security looks like
+  let barGraphLayout = { barmode: "group"}
+  const securityDataGraph = securityData(deckObject)
+  let displaySecurityDataOdds = document.getElementById('tester')
+  Plotly.newPlot(displaySecurityDataOdds, securityDataGraph, barGraphLayout)
 }
 
 window.addEventListener("load", function() {
