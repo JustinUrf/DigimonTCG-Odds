@@ -3,11 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'plotly.js-dist-min';
 import 'plotly.js';
 import createDeck, { Card } from './createDeck';
-import shuffleArray from './shuffleArray';
 import createData from './createLineGraphData';
 import rookieOddsData from './rookieOddsData';
-import createPieData from './createPieData';
 import rookieAndChampionsOddsData from './rookieAndChampionOddsData';
+import securityData from './securityData';
 
 
 let Plotly = require('plotly.js')
@@ -38,14 +37,20 @@ function handleDeckForm(event) {
   let displayDeck  = document.getElementById('tester');
   Plotly.newPlot(displayDeck, deckBarGraph);
 
-  //Creates Data for 
+  //Creates Data/graph for rookie Odds
   const rookiePieGraph = rookieOddsData(deckObject);
   let displayRookieOdds = document.getElementById('rookieOdds')
   Plotly.newPlot(displayRookieOdds, rookiePieGraph, layout)
 
+
+  //Create Data/graph for Rookies & Champions
   const rookieAndChampionPieGraph = rookieAndChampionsOddsData(deckObject);
   let displayRookieAndChampionOdds = document.getElementById('rookieAndChampionOdds')
   Plotly.newPlot(displayRookieAndChampionOdds, rookieAndChampionPieGraph, layout)
+
+  //Create data for what everything in your security looks like 
+  const testData = securityData(deckObject)
+  console.log(testData)
 }
 
 window.addEventListener("load", function() {

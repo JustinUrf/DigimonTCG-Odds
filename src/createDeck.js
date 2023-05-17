@@ -24,7 +24,7 @@ export default function createDeck(lv3, lv4, lv5, lv6, lv7, options, tamers) {
   }
 
   for (let i = 0; i < lv7; i++) {
-    deck.push(new Card("tamers"))
+    deck.push(new Card("lv7"))
   }
 
   for (let i = 0; i < options; i++) {

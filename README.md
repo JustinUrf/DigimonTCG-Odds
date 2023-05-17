@@ -78,3 +78,4 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 
 * 0800-0900 Reading Netilify Documentation, planning how to style my site.
 * 0900-1000 Add logic for gathering Security odd
+* 1000-1100 Add logic to gather data into a giant object
