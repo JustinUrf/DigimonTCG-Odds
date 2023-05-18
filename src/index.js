@@ -8,13 +8,41 @@ import rookieOddsData from './rookieOddsData';
 import rookieAndChampionsOddsData from './rookieAndChampionOddsData';
 import securityData from './securityData';
 import "./styles.css"
+import createTitle from './createPlotlyTitle';
 
 
 let Plotly = require('plotly.js')
 
-const layout = {
-  height: 400,
-  width: 500
+var layout = {
+  title: {
+    text:'Plot Title',
+    font: {
+      family: 'Courier New, monospace',
+      size: 24
+    },
+    xref: 'paper',
+    x: 0.05,
+  },
+  xaxis: {
+    title: {
+      text: 'x Axis',
+      font: {
+        family: 'Courier New, monospace',
+        size: 18,
+        color: '#7f7f7f'
+      }
+    },
+  },
+  yaxis: {
+    title: {
+      text: 'y Axis',
+      font: {
+        family: 'Courier New, monospace',
+        size: 18,
+        color: '#7f7f7f'
+      }
+    }
+  }
 };
 
 function handleDeckForm(event) {
@@ -36,21 +64,33 @@ function handleDeckForm(event) {
   const deckBarGraphY =  [lv3, lv4, lv5, lv6, lv7, options, tamers]
   const deckBarGraph = createData(deckBarGraphX, deckBarGraphY, 'bar')
   let displayDeck  = document.getElementById('deck');
-  Plotly.newPlot(displayDeck, deckBarGraph);
+  Plotly.newPlot(displayDeck, deckBarGraph, createTitle("Decks Ratio"));
 
   //Creates Data/graph for rookie Odds
   const rookiePieGraph = rookieOddsData(deckObject);
   let displayRookieOdds = document.getElementById('rookieOdds')
-  Plotly.newPlot(displayRookieOdds, rookiePieGraph, layout)
+  Plotly.newPlot(displayRookieOdds, rookiePieGraph, createTitle("Rookie in Starting Hand"))
 
 
   //Create Data/graph for Rookies & Champions
   const rookieAndChampionPieGraph = rookieAndChampionsOddsData(deckObject);
   let displayRookieAndChampionOdds = document.getElementById('rookieAndChampionOdds')
-  Plotly.newPlot(displayRookieAndChampionOdds, rookieAndChampionPieGraph, layout)
+  Plotly.newPlot(displayRookieAndChampionOdds, rookieAndChampionPieGraph, createTitle("Rookie and Champion in Opening Hand"))
 
   //Create data for what everything in your security looks like
-  let barGraphLayout = { barmode: "group"}
+  let barGraphLayout = {     
+      title: {
+      text: "Security",
+      font: {
+        family: 'Courier New, monospace',
+        size: 24
+      },
+      xref: 'paper',
+      x: 0.05,
+      },
+
+      barmode: "group" 
+    }
   const securityDataGraph = securityData(deckObject)
   let displaySecurityDataOdds = document.getElementById('tester')
   Plotly.newPlot(displaySecurityDataOdds, securityDataGraph, barGraphLayout)

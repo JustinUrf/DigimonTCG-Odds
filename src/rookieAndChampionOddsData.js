@@ -10,7 +10,7 @@ export default function rookieAndChampionsOddsData(deck) {
     "didNot" : 0
   }
 
-  for (let loop = 0; loop < 1000; loop++) {
+  for (let loop = 0; loop < 10000; loop++) {
     let result = rookieOddsAndChampion(deck) 
     if (result === true) {
       finalResult.both += 1;

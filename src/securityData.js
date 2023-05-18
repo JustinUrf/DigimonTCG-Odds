@@ -50,7 +50,7 @@ export default function securityData(deck) {
         },
   }
 
-  for (let loop = 0; loop < 1000; loop++) {
+  for (let loop = 0; loop < 10000; loop++) {
     let result = securityOdds(deck)
 
     for (const property in result) {

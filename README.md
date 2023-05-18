@@ -59,8 +59,8 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 
 ### Monday, 05/15/23 
 * 1300-1400 Changed format of README to military time to track time easier. Solved function for Rookie Odds.
-* 1400-1500 Create createData.js logic.
-* 1500-1600 Refactoring Old code.
+* 1400-1500 Create createDatao.js logic.
+* 1500-1600 Refactoring Old cde.
 * 1600-1700 An old bug comes back
 
 ### Tuesday, 05/16/23
@@ -86,3 +86,4 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 ### Thursday, 05/18/23
 
 * 0800-0900 Add basic styling, grey gradient
+* 900-1000 Add titles to graphs, cleaning up code

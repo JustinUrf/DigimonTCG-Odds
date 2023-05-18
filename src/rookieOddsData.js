@@ -9,7 +9,7 @@ export default function rookieOddsData(deck) {
     "noRookie": 0
   };
 
-  for (let loop = 0; loop < 1000; loop++) {
+  for (let loop = 0; loop < 10000; loop++) {
     let result = rookieOdds(deck);
 
     if (result === true) {
