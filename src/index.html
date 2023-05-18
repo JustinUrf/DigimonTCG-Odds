@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en-US">
   <head>
     <title>Odds</title>
@@ -7,33 +8,34 @@
   <div class="container">
     <div class="row">
       <div class=" container pt-2 mt-5 col-6">
-        <h3>Enter Your Deck.</h3>
+        <h3>Enter Deck Ratio</h3>
         <form id="deck-checker-form">
-          <label for="lv3">Enter number of level 3's/Rookies</label>
-          <input id="lv3" type="number">
-          <br>
-          <label for="lv4">Enter number of level 4's/Champion </label>
+          <div class="float-right">
+            <label for="lv3">Enter number of level 3's</label>
+            <input id="lv3" type="number">
+          </div>
+          <label for="lv4">Enter number of level 4's</label>
           <input id="lv4" type="number">
           <br>
-          <label for="lv5">Enter number of level 5's/Ultimate</label>
+          <label for="lv5">Enter number of level 5's</label>
           <input id="lv5" type="number">
           <br>
-          <label for="lv6">Enter number of level 6's/Ultimates</label>
+          <label for="lv6">Enter number of level 6's</label>
           <input id="lv6" type="number">
           <br>
-          <label for="lv7">Enter number of level 7's/Megas</label>
+          <label for="lv7">Enter number of level 7's</label>
           <input id="lv7" type="number">
           <br>
           <label for="options">Enter number of Options</label>
-          <input id="options" type="number">
+          <input id="options" type="number" class="justify-content-end">
           <br>
-          <label for="tamers">Enter the number of Tamers</label>
-          <input id="tamers" type="number">
-          <button type="submit">Submit</button>
+          <label for="tamers">Enter number of Tamers</label>
+          <input id="tamers" type="number" class="justify-content-end">
+          <button type="submit">Simulate</button>
         </form>
       </div>
       <div class="col-6 container mt-5">
-        <h2>This is a digimon odds simulator that runs through scenarios 1000 times and visualizes what happens. Input your deck. </h2>
+        <h2>This is a digimon odds simulator that runs through scenarios 1000 times and visualizes what happens.  </h2>
         <div id="deck" style="width: 100%; height:75%;"></div>
       </div>
     </div>
@@ -46,7 +48,7 @@
         <div id="rookieAndChampionOdds"></div>
       </div>
     </div>
-    <div id="tester"></div>
+    <div id="tester" class="width: 100%;"></div>
   </div>
 
 <script src="bundle.js"></script></body>

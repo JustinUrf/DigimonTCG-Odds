@@ -7,6 +7,7 @@ import createData from './createLineGraphData';
 import rookieOddsData from './rookieOddsData';
 import rookieAndChampionsOddsData from './rookieAndChampionOddsData';
 import securityData from './securityData';
+import "./styles.css"
 
 
 let Plotly = require('plotly.js')

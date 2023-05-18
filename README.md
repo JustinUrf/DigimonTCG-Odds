@@ -81,3 +81,8 @@ Example project did not use react 17.0 therfore there are dependancy issues with
 * 1100-1200 WIP logic for graphing data for Securities odd 
 * 1300-1400 Apply logic for graphing data and security odds
 * 1400-1500 General styling with CSS/Bootstrap
+* 1500-1545 Made Netlify Site, @ https://digimonoddscalculator.netlify.app/ 
+
+### Thursday, 05/18/23
+
+* 0800-0900 Add basic styling, grey gradient
