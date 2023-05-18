@@ -13,37 +13,6 @@ import createTitle from './createPlotlyTitle';
 
 let Plotly = require('plotly.js')
 
-var layout = {
-  title: {
-    text:'Plot Title',
-    font: {
-      family: 'Courier New, monospace',
-      size: 24
-    },
-    xref: 'paper',
-    x: 0.05,
-  },
-  xaxis: {
-    title: {
-      text: 'x Axis',
-      font: {
-        family: 'Courier New, monospace',
-        size: 18,
-        color: '#7f7f7f'
-      }
-    },
-  },
-  yaxis: {
-    title: {
-      text: 'y Axis',
-      font: {
-        family: 'Courier New, monospace',
-        size: 18,
-        color: '#7f7f7f'
-      }
-    }
-  }
-};
 
 function handleDeckForm(event) {
   event.preventDefault();
@@ -80,7 +49,7 @@ function handleDeckForm(event) {
   //Create data for what everything in your security looks like
   let barGraphLayout = {     
       title: {
-      text: "Security",
+      text: "Security (Assume first security is 6th card in deck. Reverse for other order)",
       font: {
         family: 'Courier New, monospace',
         size: 24
