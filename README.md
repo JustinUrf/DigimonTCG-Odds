@@ -10,8 +10,28 @@
 * HTML 
 * Bootstrap
 
+## Description
+
+This website uses takes in user information about a specific deck and uses those ratio's to run a simulated test 10,000 times in order to give users visual data of seeing a Rookie in first hand, Rookie & a champion, and what MIGHT their security be.
+
+## Setup/Installation Requirements
+
+* Git clone reposiotory to whatever directory to desktop.
+* Make sure to have `node.js` installed.
+* Open directory in any IDE and run the command `npm run build` 
+* Use command `npm run start` to run development server locally in the `capstone-project` folder.
+* Hosted on `https://digimonoddssimulator.netlify.app/` 
+
+
 ## Known Bugs
-* App is still a work in progress and is part of a 4 week long Capstone project
+
+* Not made for mobile users 
+
+## License
+
+MIT
+
+Copyright (c) 05-18-23 Justin Lee.
 
 
 ### Research & Planning Log
